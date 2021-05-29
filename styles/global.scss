@@ -1,37 +1,97 @@
+@import url("/fonts/stylesheet.css");
+
 body {
-    background-color: #FBFBFB;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "plateletheavyregular";
+  -webkit-font-smoothing: antialiased !important;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .front {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    .container {
-        max-width: 1000px;
-        text-align: center;
-        margin: 0 auto;
+  height: 100vh;
+  background-color: #fbfbfb;
+  display: flex;
+  align-items: center;
+  .container {
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
 
-        img {
-            display: block;
-        }
-
-        a {
-            display: block;
-        }
+    img {
+      display: block;
     }
+
+    a {
+      display: block;
+    }
+  }
 }
 
+.enter-btn {
+  color: #303030;
+  font-size: 24px;
+  transition: all ease 0.3s;
+  &:hover {
+    color: #707070;
+  }
+}
+
+header {
+  padding: 30px 0;
+  .logo {
+    width: 152px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 20px;
+
+      a {
+        color: #303030;
+        font-size: 18px;
+
+        &:hover {
+          color: #999;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  padding: 60px 0;
+}
+
+.billboard {
+  margin-bottom: 60px;
+}
 
 footer {
-    background-color: #303030;
-    padding: 15px 0px;
-    text-align: center;
-    color: #999;
+  background-color: #303030;
+  padding: 50px 0px 30px;
+  text-align: center;
+  color: #999;
+  text-transform: uppercase;
+
+  a {
+    color: #585858;
+    transition: all ease 0.3s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
 }
